@@ -1,0 +1,32 @@
+{
+  "name": "onchain-hash-ts",
+  "version": "1.0.0",
+  "description": "Modular TypeScript service for storing and verifying hashes on-chain",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "start": "node dist/server.js",
+    "start:cli": "node dist/index.js",
+    "dev": "ts-node --project tsconfig.json src/server.ts",
+    "dev:cli": "ts-node --project tsconfig.json src/index.ts",
+    "lint": "tsc --noEmit --project tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.15.0",
+    "express": "^4.21.1",
+    "node-fetch": "^3.3.2",
+    "pino": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "pino-pretty": "^13.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
